@@ -1,0 +1,19 @@
+<h1>Log In Here</h1>
+<!-- <br> -->
+<%if logged_in?%>
+	<p>Welcome back, <%=@current_user.username%></p>
+
+	<form action="/logout" method="post">
+	<input type="submit" value="Logout">
+	</form>
+<%else%>
+
+<h1><%= @message %></h1>
+
+<form action="/login" method="post">
+  <input type="text" name="email" placeholder="Enter Email">
+  <input type="password" name="password" placeholder="Enter Password">
+  <input type="submit" value="Login">
+</form>
+
+<%end%>

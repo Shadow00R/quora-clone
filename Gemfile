@@ -17,10 +17,10 @@ gem 'sinatra-activerecord'
 
 # Adding Database elements
 gem 'pg'
-
+gem 'bcrypt'
 # Adding rake for management
 gem 'rake'
-
+gem 'will_paginate', '~>3.0.0'
 # Adding rspec for running unit testing
 gem 'rspec'
 
